@@ -1,0 +1,5 @@
+{:sreen-name "my-screen-name"
+ :app-consumer-key "my-app-consumer-key"
+ :app-consumer-secret "my-app-consumer-secret"
+ :user-access-token "my-user-access-token"
+ :user-access-token-secret "my-user-access-token-secret"}
