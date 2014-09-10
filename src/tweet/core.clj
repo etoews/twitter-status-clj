@@ -3,7 +3,6 @@
   (:use [clojure.pprint :only (pprint)])
   (:use [environ.core :only (env)])
   (:require
-    [clojure.string :as string]
     [twitter.oauth :refer :all]
     [twitter.api.restful :refer :all]))
 
