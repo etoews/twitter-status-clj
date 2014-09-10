@@ -4,7 +4,6 @@
   (:use [environ.core :only (env)])
   (:require
     [clojure.string :as string]
-    [clojure.tools.cli :refer [parse-opts]]
     [twitter.oauth :refer :all]
     [twitter.api.restful :refer :all]))
 
@@ -13,6 +12,8 @@
   Usage: twitter-status-clj STATUS
   Example: twitter-status-clj \"Tweeting with Clojure\""
   [& args]
+  ;; Normally we would use clojure.tools.cli to parse-opts but
+  ;; that's overkill for this example
   (def status (nth args 0))
   (def twitter-creds
     (make-oauth-creds (env :twitter-app-consumer-key)
